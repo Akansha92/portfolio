@@ -39,6 +39,17 @@
     --smaller-font-size: 0.875rem;
   }
 }
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  line-height: 1.6;
+  background-image: url("/portfolio-responsive-complete-main/assets/img/ba92c3aaab14d0d9d91d32467e96e8ae.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 /*===== BASE =====*/
 *, ::before, ::after {
@@ -212,15 +223,6 @@ img {
 }
 
 /*===== HOME =====*/
-.home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
-  text-align: center;
-  background-image: url("assets/img/bg.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 /* Add a background image to the home section */
 
 .home__data {
@@ -304,8 +306,20 @@ img {
 
 .about__img img {
   width: 200px;
-  border-radius: 0.5rem;
+  border-radius: 
+  0.5rem;
 }
+  .about__container {
+    row-gap: 2rem;
+    text-align: center;
+    background-image: url("/portfolio-responsive-complete-main/assets/img/work7.jpg"); /* Specify the background image */
+    background-size: contain; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Makes the background fixed during scrolling */
+    padding: 2rem; /* Adds padding inside the container for better spacing */
+    color: #ffffff; /* Ensures text is readable against the background */
+  }
+  
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -379,7 +393,16 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
-
+.skills__container {
+  row-gap: 2rem;
+  text-align: center;
+  background-image: url("/portfolio-responsive-complete-main/assets/img/work7.jpg"); /* Specify the background image */
+  background-size: contain; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Makes the background fixed during scrolling */
+  padding: 2rem; /* Adds padding inside the container for better spacing */
+  color: #ffffff; /* Ensures text is readable against the background */
+}
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -393,6 +416,26 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+}
+.work__container {
+  row-gap: 2rem;
+  text-align: center;
+  background-image: url("/portfolio-responsive-complete-main/assets/img/work7.jpg"); /* Specify the background image */
+  background-size: contain; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Makes the background fixed during scrolling */
+  padding: 2rem; /* Adds padding inside the container for better spacing */
+  color: #ffffff; /* Ensures text is readable against the background */
+}
+.work__img {
+  overflow: hidden; /* Ensures content doesn't overflow the container */
+  max-height: 300px; /* Adjust the height of the container as desired */
+}
+
+.work__img img {
+  width: 100%; /* Ensures the image stretches to fit the width */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: cover; /* Crops the image to fit within the container dimensions */
 }
 
 .work__img img {
@@ -438,6 +481,16 @@ img {
   outline: none;
   margin-bottom: var(--mb-4);
   background: #fdfdfd;
+}
+.contact__container {
+  row-gap: 2rem;
+  text-align: center;
+  background-image: url("/portfolio-responsive-complete-main/assets/img/work7.jpg"); /* Specify the background image */
+  background-size: contain; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Makes the background fixed during scrolling */
+  padding: 2rem; /* Adds padding inside the container for better spacing */
+  color: #ffffff; /* Ensures text is readable against the background */
 }
 .contact__button {
   display: block;
